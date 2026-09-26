@@ -1,0 +1,82 @@
+[
+  {
+    "id": "aadhaar",
+    "name": "Aadhaar Card",
+    "description": "Unique 12-digit identity number issued by UIDAI for Indian citizens.",
+    "why_required": "Used for Direct Benefit Transfer (DBT) and primary identity verification across government portals.",
+    "how_to_obtain": "Visit any Aadhaar Seva Kendra or approved bank/post office enrollment center.",
+    "issuing_authority": "Unique Identification Authority of India (UIDAI)",
+    "portal_url": "https://uidai.gov.in/",
+    "schemes_requiring": ["PM-Kisan", "PMAY-Gramin", "Ayushman Bharat", "MGNREGA", "PM Mudra Yojana"]
+  },
+  {
+    "id": "income_certificate",
+    "name": "Income Certificate",
+    "description": "Official government document certifying annual family income.",
+    "why_required": "Required to prove eligibility for welfare schemes with income caps.",
+    "how_to_obtain": "Apply through your state e-District portal or Tehsildar office.",
+    "issuing_authority": "Revenue Department / Tehsildar of respective State/UT",
+    "portal_url": "https://services.india.gov.in/",
+    "schemes_requiring": ["PMAY-Gramin", "Post Matric Scholarship", "PM-GKAY", "National Scholarship Portal"]
+  },
+  {
+    "id": "caste_certificate",
+    "name": "Caste Certificate (SC/ST/OBC)",
+    "description": "Official document confirming belonging to SC, ST, or OBC category.",
+    "why_required": "Required for targeted reservation benefits, fee waivers, and specific financial support schemes.",
+    "how_to_obtain": "Apply online via state e-District portal or offline at Revenue Office.",
+    "issuing_authority": "District Magistrate / Sub-Divisional Magistrate (SDM) / Tehsildar",
+    "portal_url": "https://services.india.gov.in/",
+    "schemes_requiring": ["Stand Up India", "National Scholarship Portal", "PM Vishwakarma"]
+  },
+  {
+    "id": "bank_account",
+    "name": "Bank Account Passbook / Cancelled Cheque",
+    "description": "Aadhaar-seeded bank account details for direct fund transfer.",
+    "why_required": "Enables direct cash benefit transfer (DBT) without intermediaries.",
+    "how_to_obtain": "Open account at any public/private bank or India Post Payments Bank (IPPB).",
+    "issuing_authority": "Scheduled Commercial Bank / Reserve Bank of India",
+    "portal_url": "https://pmjdy.gov.in/",
+    "schemes_requiring": ["PM-Kisan", "PM Matru Vandana Yojana", "MGNREGA", "PM SVANidhi", "PM Shram Yogi Maandhan"]
+  },
+  {
+    "id": "domicile_certificate",
+    "name": "Domicile / Residence Certificate",
+    "description": "Proof that applicant is a permanent resident of a specific State or Union Territory.",
+    "why_required": "Required for state-specific government welfare schemes.",
+    "how_to_obtain": "Apply via State e-Services / e-District portal with address proof.",
+    "issuing_authority": "Sub-Divisional Magistrate / Revenue Officer",
+    "portal_url": "https://services.india.gov.in/",
+    "schemes_requiring": ["State Welfare Schemes", "BOCW Workers Welfare", "PMAY-Gramin"]
+  },
+  {
+    "id": "land_records",
+    "name": "Land Records (RoR / Khasra / Khatauni)",
+    "description": "Document proving agricultural land ownership.",
+    "why_required": "Mandatory for farmer income support, crop insurance, and agricultural credit schemes.",
+    "how_to_obtain": "Download online from state land records portal (e.g., Bhulekh) or Tehsil.",
+    "issuing_authority": "State Revenue / Land Records Department",
+    "portal_url": "https://dilrmp.gov.in/",
+    "schemes_requiring": ["PM-Kisan", "PM Fasal Bima Yojana", "Soil Health Card Scheme"]
+  },
+  {
+    "id": "ration_card",
+    "name": "Ration Card (NFSA / BPL / AAY)",
+    "description": "Official card issued for subsidized foodgrains under National Food Security Act.",
+    "why_required": "Establishes food security and low-income status.",
+    "how_to_obtain": "Apply through State Food & Civil Supplies Department.",
+    "issuing_authority": "Department of Food & Public Distribution / State Civil Supplies",
+    "portal_url": "https://nfsa.gov.in/",
+    "schemes_requiring": ["PM-GKAY", "Ayushman Bharat", "PM Ujjwala Yojana", "One Nation One Ration Card"]
+  },
+  {
+    "id": "artisan_id",
+    "name": "Artisan / Craftsperson Certificate",
+    "description": "Official ID or certificate verifying traditional craft/artisan trade.",
+    "why_required": "Required for toolkit incentives, credit support, and skill upgrade.",
+    "how_to_obtain": "Register on PM Vishwakarma portal or Development Commissioner (Handicrafts).",
+    "issuing_authority": "Ministry of Micro, Small & Medium Enterprises (MSME)",
+    "portal_url": "https://pmvishwakarma.gov.in/",
+    "schemes_requiring": ["PM Vishwakarma", "PMEGP Loan Scheme"]
+  }
+]

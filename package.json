@@ -1,0 +1,13 @@
+{
+  "name": "sarkari-simpler",
+  "version": "1.0.0",
+  "description": "AI-powered Government Scheme Discovery Dashboard",
+  "scripts": {
+    "start": "node start.js",
+    "backend": "node mock-server.js",
+    "frontend": "npx serve frontend -p 8000 --no-clipboard",
+    "dev": "node start.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

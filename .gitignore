@@ -1,0 +1,48 @@
+# --- Secrets & Credentials ---
+.env
+.env.local
+.env.*.local
+data-ingestion/.env
+
+# --- Node.js ---
+node_modules/
+worker/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Build Artifacts ---
+dist/
+build/
+.cache/
+worker/dist/
+
+# --- Cloudflare Wrangler ---
+.wrangler/
+worker/.wrangler/
+
+# --- Runtime / Generated Data ---
+# data/db.json is auto-regenerated from seed files on startup
+data/db.json
+history.json
+data-ingestion/vectors_output.json
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Test / Temp Files ---
+test_query.json
+test_query_hi.json
+
+# --- Backup Directories ---
+frontend_backup_before_revert/
+
+# --- OS & Editor Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo

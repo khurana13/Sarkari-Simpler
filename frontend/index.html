@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarkari Simpler | Government Schemes, Made Simple</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css?v=18">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="top-nav" id="topNav">
+        <div class="nav-container">
+            <div class="brand">
+                <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="url(#brandGradient)">
+                    <defs>
+                        <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#8B5CF6" />
+                            <stop offset="50%" stop-color="#A855F7" />
+                            <stop offset="100%" stop-color="#C084FC" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <div class="brand-text">
+                    <h1 data-en="Sarkari Simpler" data-hi="सरकारी सिम्पलर">Sarkari Simpler</h1>
+                    <span class="subtitle" data-en="Government Schemes, Made Simple"
+                        data-hi="सरकारी योजनाएं, सरल बनाई गईं">Government Schemes, Made Simple</span>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#" id="navHome" class="nav-item active" data-en="Home" data-hi="मुख्य पृष्ठ">Home</a>
+                <a href="#" id="navSchemes" class="nav-item" data-en="Schemes" data-hi="योजनाएं">Schemes</a>
+                <a href="#" id="navAbout" class="nav-item" data-en="About" data-hi="हमारे बारे में">About</a>
+            </nav>
+
+            <div class="nav-controls">
+                <div class="lang-selector-container">
+                    <svg class="globe-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                    <select id="langDropdown" class="lang-dropdown">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी</option>
+                        <option value="bn">বাংলা</option>
+                        <option value="ta">தமிழ்</option>
+                        <option value="te">తెలుగు</option>
+                        <option value="mr">मराठी</option>
+                        <option value="gu">ગુજરાતી</option>
+                        <option value="kn">ಕನ್ನಡ</option>
+                        <option value="ml">മലയാളം</option>
+                        <option value="pa">ਪੰਜਾਬੀ</option>
+                        <option value="or">ଓਡ଼ିଆ</option>
+                        <option value="as">অসমীয়া</option>
+                        <option value="ur">اردو</option>
+                        <option value="ne">नेपाली</option>
+                    </select>
+                </div>
+
+                <div class="font-scale-controls tooltip-wrapper" title="Adjust Text Size">
+                    <button id="fontScaleDownBtn" class="font-scale-btn" aria-label="Decrease Font Size">A-</button>
+                    <button id="fontScaleUpBtn" class="font-scale-btn" aria-label="Increase Font Size">A+</button>
+                </div>
+
+                <button id="authLoginBtn" class="nav-login-btn" data-en="Login" data-hi="लॉग इन">Login</button>
+                <button id="navGetStartedBtn" class="btn-primary" data-en="Get Started" data-hi="शुरू करें">Get Started</button>
+
+                <button id="navBookmarkBtn" class="nav-bookmark-btn" aria-label="Saved Schemes" title="Saved Schemes">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- App Wrapper -->
+    <main class="app-wrapper">
+
+        <!-- ================= HOME SECTION ================= -->
+        <section id="homeSection" class="view-section active">
+            <div class="hero-bg-wrapper">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="eyebrow-pill" data-en="Government Schemes, Made Simple"
+                    data-hi="सरकारी योजनाएं, सरल बनाई गईं">Government Schemes, Made Simple</div>
+
+                <h1 class="hero-title" data-en="Your Guide to Government Schemes"
+                    data-hi="आपका मार्गदर्शक सरकारी योजनाएं">Your Guide to<br><span class="hero-title-purple" data-en="Government Schemes" data-hi="सरकारी योजनाएं">Government Schemes</span></h1>
+
+                <p class="hero-subtitle" data-en="Discover benefits you're eligible for – just ask in your language."
+                    data-hi="उन लाभों को खोजें जिनके लिए आप पात्र हैं - बस अपनी भाषा में पूछें।">
+                    Discover benefits you're eligible for – just ask in your language.
+                </p>
+
+                <div class="hero-features-row">
+                    <div class="feature-pill">
+                        <span class="feature-check">✓</span>
+                        <span data-en="Instant Answers" data-hi="त्वरित उत्तर">Instant Answers</span>
+                    </div>
+                    <div class="feature-pill">
+                        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        <span data-en="Trusted Information" data-hi="विश्वसनीय जानकारी">Trusted Information</span>
+                    </div>
+                    <div class="feature-pill">
+                        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        <span data-en="For Every Citizen" data-hi="हर नागरिक के लिए">For Every Citizen</span>
+                    </div>
+                </div>
+
+                <div class="search-card-glass">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="homeQueryInput" class="main-search-input"
+                            placeholder="Example: I am a farmer, what schemes can I get?"
+                            data-en="Example: I am a farmer, what schemes can I get?"
+                            data-hi="उदाहरण: मैं एक किसान हूं, मुझे कौन सी योजनाएं मिल सकती हैं?">
+                        <div class="search-input-actions">
+                            <button class="input-action-btn" id="homeMicBtn" title="Speak">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                    <line x1="12" y1="19" x2="12" y2="22"></line>
+                                </svg>
+                            </button>
+                            <button class="input-action-btn" id="homeKbdBtn" title="On-Screen Keyboard">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+                                    <line x1="6" y1="8" x2="6.01" y2="8"></line>
+                                    <line x1="10" y1="8" x2="10.01" y2="8"></line>
+                                    <line x1="14" y1="8" x2="14.01" y2="8"></line>
+                                    <line x1="18" y1="8" x2="18.01" y2="8"></line>
+                                    <line x1="6" y1="12" x2="6.01" y2="12"></line>
+                                    <line x1="18" y1="12" x2="18.01" y2="12"></line>
+                                    <line x1="8" y1="16" x2="16" y2="16"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-btn-row">
+                        <button class="btn-primary hero-search-btn" id="homeSubmitBtn">
+                            <span data-en="Search Schemes →" data-hi="योजना खोजें →">Search Schemes &rarr;</span>
+                        </button>
+                        <button class="btn-secondary hero-find-btn" id="homeFindSchemesBtn">
+                            <span class="sparkle-icon">✨</span>
+                            <span data-en="Find Schemes for Me" data-hi="मेरे लिए योजनाएं खोजें">Find Schemes for Me</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Sabka Saath Badge Card -->
+            <div class="sabka-saath-card">
+                <div class="sabka-ring-container">
+                    <svg class="sabka-ring-svg" viewBox="0 0 36 36">
+                        <path class="ring-bg" stroke="rgba(139, 92, 246, 0.2)" stroke-width="3" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                        <path class="ring-active" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="75, 100" stroke-linecap="round" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    </svg>
+                </div>
+                <div class="sabka-title">SABKA SAATH / SABKA VIKAS</div>
+                <div class="sabka-subtitle">SABKA VISHWAS / SABKA PRAYAS</div>
+                <div class="tricolor-progress-bar">
+                    <span class="tc-saffron"></span>
+                    <span class="tc-white"></span>
+                    <span class="tc-green"></span>
+                </div>
+            </div>
+
+            <!-- Horizontal Statistics Strip below hero -->
+            <div class="stats-strip">
+                <div class="stat-item">
+                    <div class="stat-icon-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="18" height="18" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-text">
+                        <div class="stat-number" id="statTotalSchemes">66+</div>
+                        <div class="stat-label">Verified Schemes</div>
+                    </div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-icon-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="18" height="18" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="stat-text">
+                        <div class="stat-number" id="statTotalCategories">15+</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-icon-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="18" height="18" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="stat-text">
+                        <div class="stat-number" id="statVerifiedPercent">100%</div>
+                        <div class="stat-label">Official Sources</div>
+                    </div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-icon-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="18" height="18" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <div class="stat-text">
+                        <div class="stat-number" id="statStates">1 States/UTs</div>
+                        <div class="stat-label">States & UTs</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section id="aboutSection" class="view-section" style="display:none;">
+            <div class="hero-bg-wrapper">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="eyebrow-pill">About Sarkari Simpler</div>
+                <h1 class="hero-title">Bridging Citizens <br>to <span class="gradient-text">Opportunities</span></h1>
+                <p class="hero-subtitle">
+                    Sarkari Simpler helps every citizen easily discover, understand and access government schemes — in a
+                    simpler, faster and more inclusive way.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="document.getElementById('navSchemes').click();">Start Exploring
+                        &rarr;</button>
+                    <button class="btn-secondary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        </svg>
+                        Watch Our Story
+                    </button>
+                </div>
+            </div>
+
+            <div class="about-container">
+                <div class="mission-cards">
+                    <div class="card-dark">
+                        <div class="stat-icon-badge mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg></div>
+                        <h3>Our Mission</h3>
+                        <p>To make government schemes accessible to every citizen through simple, reliable and
+                            AI-powered guidance.</p>
+                    </div>
+                    <div class="card-dark">
+                        <div class="stat-icon-badge mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg></div>
+                        <h3>Who We Serve</h3>
+                        <p>Farmers, students, women, senior citizens, job seekers, small businesses — everyone, across
+                            rural and urban India.</p>
+                    </div>
+                    <div class="card-dark">
+                        <div class="stat-icon-badge mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                            </svg></div>
+                        <h3>What We Do</h3>
+                        <p>We simplify complex government information, provide personalized guidance, and connect
+                            citizens to verified official sources.</p>
+                    </div>
+                </div>
+
+                <div class="stats-strip static-strip">
+                    <div class="stat-item">
+                        <div class="stat-icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg></div>
+                        <div class="stat-text">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Schemes Covered</div>
+                        </div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            </svg></div>
+                        <div class="stat-text">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Categories</div>
+                        </div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                            </svg></div>
+                        <div class="stat-text">
+                            <div class="stat-number">Millions</div>
+                            <div class="stat-label">Citizens Empowered</div>
+                        </div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                </path>
+                            </svg></div>
+                        <div class="stat-text">
+                            <div class="stat-number">1</div>
+                            <div class="stat-label">Stronger India</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="values-section" id="valuesSection">
+                    <div class="section-header">
+                        <h2>Our Values</h2>
+                        <span class="section-caption">Guided by purpose. Built for people.</span>
+                    </div>
+                    <div class="values-grid">
+                        <div class="card-dark row-card">
+                            <div class="stat-icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg></div>
+                            <div class="val-text">
+                                <h3>Trust</h3>
+                                <p>Verified and reliable information from official sources.</p>
+                            </div>
+                        </div>
+                        <div class="card-dark row-card">
+                            <div class="stat-icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg></div>
+                            <div class="val-text">
+                                <h3>Simplicity</h3>
+                                <p>Complex information, made easy for everyone.</p>
+                            </div>
+                        </div>
+                        <div class="card-dark row-card">
+                            <div class="stat-icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg></div>
+                            <div class="val-text">
+                                <h3>Inclusivity</h3>
+                                <p>For every citizen, in every corner of India.</p>
+                            </div>
+                        </div>
+                        <div class="card-dark row-card">
+                            <div class="stat-icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg></div>
+                            <div class="val-text">
+                                <h3>Impact</h3>
+                                <p>Empowering people for a brighter tomorrow.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Scroll Nav -->
+            <div class="scroll-nav" id="aboutScrollNav">
+                <ul>
+                    <li class="active"><span class="dot"></span> OUR MISSION</li>
+                    <li><span class="dot"></span> WHAT WE DO</li>
+                    <li><span class="dot"></span> OUR IMPACT</li>
+                    <li><span class="dot"></span> OUR VALUES</li>
+                    <li><span class="dot"></span> THE ROAD AHEAD</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= PROFILE SECTION ================= -->
+        <section id="profileSection" class="view-section" style="display:none;">
+            <div class="hero-bg-wrapper">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-content" style="padding-bottom: 2rem; padding-top: 100px;">
+                <h1 class="hero-title">My Profile & <span class="gradient-text">Saved Schemes</span></h1>
+                <p class="hero-subtitle">View and manage the schemes you've bookmarked.</p>
+                <div style="margin-top: 2rem;">
+                    <button class="btn-secondary" id="logoutBtn">Log Out</button>
+                </div>
+            </div>
+
+            <div class="about-container" style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+                <div class="section-header">
+                    <h2>Saved Schemes</h2>
+                </div>
+                <div id="savedSchemesContainer" class="schemes-grid">
+                    <!-- Saved schemes will be populated here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SCHEMES SECTION (CORE APP) ================= -->
+        <section id="schemesSection" class="view-section" style="display:none;">
+            <div class="schemes-layout">
+                <!-- Left Sidebar -->
+                <aside class="sidebar-left">
+                    <ul class="sidebar-menu">
+                        <li class="active" id="newChatBtn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="18">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            <span data-en="New Chat" data-hi="नई चैट">New Chat</span>
+                        </li>
+                        <li id="exploreSchemesBtn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="18">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <span data-en="Explore Schemes" data-hi="योजनाएं खोजें">Explore Schemes</span>
+                        </li>
+                        <li id="findSchemesWizardBtn" class="highlight-menu-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="18">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                            <span data-en="Find Schemes for Me" data-hi="मेरे लिए योजनाएं खोजें">Find Schemes for Me ✨</span>
+                        </li>
+                        <li id="documentsLink">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="18">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                            <span data-en="Required Documents" data-hi="आवश्यक दस्तावेज">Required Documents</span>
+                        </li>
+                        <li id="adminPortalLink">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="18">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            <span data-en="Admin Portal" data-hi="एडमिन पोर्टल">Admin Portal</span>
+                        </li>
+                    </ul>
+
+                    <div class="sidebar-quote-box">
+                        <div class="quote-text" data-en="&quot;Simpler Information.<br>Stronger India.&quot;"
+                            data-hi="&quot;सरल जानकारी।<br>सशक्त भारत।&quot;">"Simpler Information.<br>Stronger India."
+                        </div>
+                        <div class="tricolor-bar"></div>
+                    </div>
+
+                    <div class="sidebar-illustration">
+                        <svg viewBox="0 0 100 100" fill="none" stroke="var(--text-muted)" stroke-width="2"
+                            class="india-outline" style="opacity:0.3; margin-bottom: 1rem; height: 60px;">
+                            <path d="M50 10 L60 30 L80 40 L60 70 L50 90 L40 70 L20 40 L40 30 Z"></path>
+                        </svg>
+                        <div class="illustration-caption" data-en="EMPOWERING CITIZENS<br>BUILDING A BRIGHTER INDIA"
+                            data-hi="नागरिकों का सशक्तिकरण<br>एक उज्जवल भारत का निर्माण">EMPOWERING CITIZENS<br>BUILDING
+                            A BRIGHTER INDIA</div>
+                    </div>
+                </aside>
+
+                <!-- Center Panel (Chat Interface) -->
+                <main class="chat-panel">
+                    <div class="chat-header">
+                        <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" stroke="url(#brandGradient)">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                        <h2 data-en="How can we help you today?" data-hi="आज हम आपकी कैसे मदद कर सकते हैं?">How can we
+                            help you today?</h2>
+                        <p class="subtitle" data-en="Ask about schemes, eligibility, or application processes."
+                            data-hi="योजनाओं, पात्रता, या आवेदन प्रक्रियाओं के बारे में पूछें।">Ask about schemes,
+                            eligibility, or application processes.</p>
+                    </div>
+
+                    <!-- Chat Output Area -->
+                    <div class="chat-messages-container" id="chatMessagesContainer" style="display:none;">
+                        <div class="chat-messages" id="chatMessages"></div>
+                        <div id="typingIndicator" style="display: none;">
+                            <div class="dot-typing"></div>
+                            <span data-en="Assistant is thinking..." data-hi="सहायक सोच रहा है...">Assistant is
+                                thinking...</span>
+                        </div>
+                        <div class="ai-response" id="responseContent" style="display:none;"></div>
+                    </div>
+
+                    <!-- Input Area -->
+                    <div class="chat-input-area" id="chatInputArea">
+                        <div class="chat-input-wrapper">
+                            <textarea id="schemesQueryInput" rows="1" maxlength="500"
+                                placeholder="Type your question here... e.g. I am a farmer, what schemes apply to me?"
+                                data-en="Type your question here..." data-hi="अपना प्रश्न यहाँ टाइप करें..."></textarea>
+
+                            <div class="chat-controls-row">
+                                <div class="left-controls">
+                                    <button class="icon-btn tooltip-wrapper" id="attachBtn"
+                                        title="Attach Document (Optional)">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path
+                                                d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="right-controls">
+                                    <span class="char-counter" id="charCounter">0/500</span>
+                                    <button class="send-btn" id="schemesSubmitBtn">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-actions-row" id="inputActionsRow">
+                            <button class="btn-primary pill" id="schemesVoiceBtn">🎤 <span data-en="Speak"
+                                    data-hi="बोलें">Speak</span></button>
+                            <button class="btn-secondary pill" id="schemesKbdBtn">⌨️ <span data-en="Keyboard"
+                                    data-hi="कीबोर्ड">On-Screen Keyboard</span></button>
+                            <button class="btn-secondary pill" id="examplesToggleBtn">💡 <span
+                                    data-en="Try Example Questions" data-hi="उदाहरण प्रश्न देखें">Try Example
+                                    Questions</span></button>
+                        </div>
+
+                        <!-- Popular Questions Grid (Shown by default or toggled) -->
+                        <div class="popular-questions" id="popularQuestionsGrid">
+                            <div class="section-header-small">
+                                <h3 data-en="Popular Questions" data-hi="लोकप्रिय प्रश्न">Popular Questions</h3>
+                                <a href="#" class="view-all-link" data-en="View All &rarr;"
+                                    data-hi="सभी देखें &rarr;">View All &rarr;</a>
+                            </div>
+                            <div class="pq-grid">
+                                <button class="pq-card" data-query="What are the best schemes for farmers?">
+                                    <div class="stat-icon-badge small"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor">
+                                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                        </svg></div>
+                                    <p data-en="What are the best schemes for farmers?"
+                                        data-hi="किसानों के लिए सबसे अच्छी योजनाएं कौन सी हैं?">What are the best
+                                        schemes for farmers?</p>
+                                    <div class="arrow-icon">&rarr;</div>
+                                </button>
+                                <button class="pq-card" data-query="Schemes for girl child education">
+                                    <div class="stat-icon-badge small"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor">
+                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z">
+                                            </path>
+                                        </svg></div>
+                                    <p data-en="Schemes for girl child education"
+                                        data-hi="बालिका शिक्षा के लिए योजनाएं">Schemes for girl child education</p>
+                                    <div class="arrow-icon">&rarr;</div>
+                                </button>
+                                <button class="pq-card" data-query="Loans for starting a small business">
+                                    <div class="stat-icon-badge small"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor">
+                                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                        </svg></div>
+                                    <p data-en="Loans for starting a small business"
+                                        data-hi="छोटे व्यवसाय शुरू करने के लिए ऋण">Loans for starting a small business
+                                    </p>
+                                    <div class="arrow-icon">&rarr;</div>
+                                </button>
+                                <button class="pq-card" data-query="Health insurance schemes for senior citizens">
+                                    <div class="stat-icon-badge small"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor">
+                                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                        </svg></div>
+                                    <p data-en="Health insurance schemes for senior citizens"
+                                        data-hi="वरिष्ठ नागरिकों के लिए स्वास्थ्य बीमा योजनाएं">Health insurance schemes
+                                        for senior citizens</p>
+                                    <div class="arrow-icon">&rarr;</div>
+                                </button>
+                                <button class="pq-card" data-query="Redirect to PM-Kisan Official Website">
+                                    <div class="stat-icon-badge small"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                        </svg></div>
+                                    <p data-en="Redirect to PM-Kisan Official Website"
+                                        data-hi="PM-किसान आधिकारिक वेबसाइट पर जाएं">Redirect to PM-Kisan Official Website</p>
+                                    <div class="arrow-icon">&rarr;</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- Right Sidebar -->
+                <aside class="sidebar-right">
+                    <div class="feature-rows">
+                        <div class="feature-row">
+                            <div class="stat-icon-badge small"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg></div>
+                            <div class="f-text">
+                                <h4 data-en="Instant Answers" data-hi="त्वरित उत्तर">Instant Answers</h4>
+                                <p data-en="Get results in seconds." data-hi="सेकंड में परिणाम पाएं।">Get results in
+                                    seconds.</p>
+                            </div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="stat-icon-badge small"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg></div>
+                            <div class="f-text">
+                                <h4 data-en="Trusted Sources" data-hi="विश्वसनीय स्रोत">Trusted Sources</h4>
+                                <p data-en="Verified by Gov of India." data-hi="भारत सरकार द्वारा सत्यापित।">Verified by
+                                    Gov of India.</p>
+                            </div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="stat-icon-badge small"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                </svg></div>
+                            <div class="f-text">
+                                <h4 data-en="For Every Citizen" data-hi="हर नागरिक के लिए">For Every Citizen</h4>
+                                <p data-en="Inclusive for all demographics." data-hi="सभी जनसांख्यिकी के लिए समावेशी।">
+                                    Inclusive for all demographics.</p>
+                            </div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="stat-icon-badge small"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg></div>
+                            <div class="f-text">
+                                <h4 data-en="Step-by-Step Guidance" data-hi="चरण-दर-चरण मार्गदर्शन">Step-by-Step
+                                    Guidance</h4>
+                                <p data-en="Clear application steps." data-hi="स्पष्ट आवेदन चरण।">Clear application
+                                    steps.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-card" style="margin-top:2rem;">
+                        <img src="assets/hero-building.jpg"
+                            alt="Parliament of India at dusk">
+                        <div class="photo-card-overlay">
+                            <div class="quote-text-small" data-en="&quot;A Simpler India for a Brighter Tomorrow&quot;"
+                                data-hi="&quot;एक उज्जवल कल के लिए एक सरल भारत&quot;">"A Simpler India for a Brighter
+                                Tomorrow"</div>
+                            <div class="tricolor-bar" style="width: 40px; height: 3px;"></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="global-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="brand">
+                    <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="url(#brandGradient2)">
+                        <defs>
+                            <linearGradient id="brandGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="var(--accent-start)" />
+                                <stop offset="100%" stop-color="var(--accent-end)" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <div class="brand-text">
+                        <h3>Sarkari Simpler</h3>
+                        <span class="subtitle">Government Schemes, Made Simple</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Schemes</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+
+            <div class="footer-right">
+                <div class="gov-moto">JAN SEVA | JAN SHAKTI | VIKSIT BHARAT</div>
+                <div class="tricolor-bar right-align"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= FIND SCHEMES FOR ME WIZARD MODAL ================= -->
+    <!-- ================= FIND SCHEMES FOR ME WIZARD MODAL ================= -->
+    <div id="findSchemesModal" class="ss-modal" style="display:none;">
+        <div class="ss-modal-content large">
+            <button class="ss-modal-close" id="closeFindSchemesModal">&times;</button>
+            <div class="wizard-header">
+                <h2>✨ Find Schemes for Me</h2>
+                <p>Select your required scheme category and answer basic profile questions to discover your matched schemes.</p>
+            </div>
+            
+            <form id="wizardForm" class="wizard-form">
+                <!-- Question 1: All 15 Scheme Categories -->
+                <div class="wizard-step step-1 active">
+                    <label class="wizard-label">1. Select Scheme Purpose / Support Category (Choose from All 15 Categories)</label>
+                    <div class="category-grid-select mt-2">
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Agriculture, Rural & Environment" checked> <span class="cat-icon">🌾</span> <span class="cat-name">Agriculture, Rural & Environment</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Banking, Financial Services and Insurance"> <span class="cat-icon">🏦</span> <span class="cat-name">Banking, Financial & Insurance</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Business & Entrepreneurship"> <span class="cat-icon">💼</span> <span class="cat-name">Business & Entrepreneurship</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Education & Learning"> <span class="cat-icon">🎓</span> <span class="cat-name">Education & Learning</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Health & Wellness"> <span class="cat-icon">🏥</span> <span class="cat-name">Health & Wellness</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Housing & Shelter"> <span class="cat-icon">🏠</span> <span class="cat-name">Housing & Shelter</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Public Safety, Law & Justice"> <span class="cat-icon">⚖️</span> <span class="cat-name">Public Safety, Law & Justice</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Science, IT & Communications"> <span class="cat-icon">💻</span> <span class="cat-name">Science, IT & Communications</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Skills & Employment"> <span class="cat-icon">🛠️</span> <span class="cat-name">Skills & Employment</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Social Welfare & Empowerment"> <span class="cat-icon">🤝</span> <span class="cat-name">Social Welfare & Empowerment</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Sports & Culture"> <span class="cat-icon">🏆</span> <span class="cat-name">Sports & Culture</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Transport & Infrastructure"> <span class="cat-icon">🛣️</span> <span class="cat-name">Transport & Infrastructure</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Travel & Tourism"> <span class="cat-icon">✈️</span> <span class="cat-name">Travel & Tourism</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Utility & Sanitation"> <span class="cat-icon">🚿</span> <span class="cat-name">Utility & Sanitation</span></label>
+                        <label class="cat-select-card"><input type="radio" name="wiz_category" value="Women and Child"> <span class="cat-icon">👩‍👧</span> <span class="cat-name">Women and Child</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 2: Who are you? -->
+                <div class="wizard-step step-2 mt-4">
+                    <label class="wizard-label">2. Who are you? (Beneficiary Role / Occupation)</label>
+                    <div class="radio-grid mt-2">
+                        <label class="radio-card"><input type="radio" name="wiz_occupation" value="Farmer" checked> 🌾 Farmer / Agri Worker</label>
+                        <label class="radio-card"><input type="radio" name="wiz_occupation" value="Student"> 🎓 Student / Youth</label>
+                        <label class="radio-card"><input type="radio" name="wiz_occupation" value="Woman"> 👩 Woman / SHG Member</label>
+                        <label class="radio-card"><input type="radio" name="wiz_occupation" value="Senior Citizen"> 👵 Senior Citizen</label>
+                        <label class="radio-card"><input type="radio" name="wiz_occupation" value="Artisan"> 🛠️ Artisan / Craftsperson</label>
+                        <label class="radio-card"><input type="radio" name="wiz_occupation" value="Street Vendor"> 🛒 Street Vendor / Hawker</label>
+                        <label class="radio-card"><input type="radio" name="wiz_occupation" value="Laborer"> 🧱 Laborer / Worker</label>
+                        <label class="radio-card"><input type="radio" name="wiz_occupation" value="Self-Employed"> 💼 Entrepreneur / Shopkeeper</label>
+                    </div>
+                </div>
+
+                <!-- Question 3: Location & Profile details -->
+                <div class="wizard-step step-3 mt-4">
+                    <div class="grid-2col">
+                        <div>
+                            <label class="wizard-label">3. Select State / Union Territory</label>
+                            <select id="wiz_state" class="wizard-select">
+                                <option value="All India">All India (Central Schemes)</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="West Bengal">West Bengal</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="wizard-label">4. Gender</label>
+                            <select id="wiz_gender" class="wizard-select">
+                                <option value="All">All / Prefer not to say</option>
+                                <option value="Female">Female</option>
+                                <option value="Male">Male</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wizard-step step-4 mt-4">
+                    <div class="grid-2col">
+                        <div>
+                            <label class="wizard-label">5. Age (Years)</label>
+                            <input type="number" id="wiz_age" class="wizard-input" value="28" min="0" max="100">
+                        </div>
+                        <div>
+                            <label class="wizard-label">6. Annual Family Income (₹)</label>
+                            <input type="number" id="wiz_income" class="wizard-input" value="150000" step="10000">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wizard-actions mt-6">
+                    <button type="button" id="wizSubmitBtn" class="btn-primary w-full">Find My Eligible Schemes &rarr;</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ================= SCHEME DETAILS MODAL ================= -->
+    <div id="schemeDetailsModal" class="ss-modal" style="display:none;">
+        <div class="ss-modal-content large">
+            <button class="ss-modal-close" id="closeSchemeDetailsModal">&times;</button>
+            <div id="schemeDetailsBody"></div>
+        </div>
+    </div>
+
+    <!-- ================= COMPARE SCHEMES MODAL ================= -->
+    <div id="compareSchemesModal" class="ss-modal" style="display:none;">
+        <div class="ss-modal-content xlarge">
+            <button class="ss-modal-close" id="closeCompareSchemesModal">&times;</button>
+            <div class="wizard-header">
+                <h2>⚖️ Compare Schemes Side-by-Side</h2>
+                <p>Compare benefits, eligibility criteria, income limits, required documents, and official portals.</p>
+            </div>
+            <div id="compareSchemesBody" class="mt-4"></div>
+        </div>
+    </div>
+
+    <!-- ================= MULTI-LANGUAGE ON-SCREEN VIRTUAL KEYBOARD ================= -->
+    <div id="virtualKeyboardModal" class="ss-modal" style="display:none;">
+        <div class="ss-modal-content large kbd-modal-content">
+            <button class="ss-modal-close" id="closeVirtualKeyboardModal">&times;</button>
+            <div class="kbd-header">
+                <h3>⌨️ Multi-Language On-Screen Keyboard</h3>
+                <div class="kbd-lang-tabs">
+                    <button class="kbd-tab active" data-kbdlang="hi">Devanagari (हिंदी/मराठी)</button>
+                    <button class="kbd-tab" data-kbdlang="en">English (QWERTY)</button>
+                    <button class="kbd-tab" data-kbdlang="bn">বাংলা</button>
+                    <button class="kbd-tab" data-kbdlang="ta">தமிழ்</button>
+                    <button class="kbd-tab" data-kbdlang="te">తెలుగు</button>
+                    <button class="kbd-tab" data-kbdlang="gu">ગુજરાતી</button>
+                    <button class="kbd-tab" data-kbdlang="kn">ಕನ್ನಡ</option>
+                    <button class="kbd-tab" data-kbdlang="ml">മലയാളം</button>
+                    <button class="kbd-tab" data-kbdlang="pa">ਪੰਜਾਬੀ</button>
+                    <button class="kbd-tab" data-kbdlang="or">ଓଡ଼ିଆ</button>
+                    <button class="kbd-tab" data-kbdlang="ur">اردو</button>
+                </div>
+            </div>
+            <div id="virtualKeyboardKeysContainer" class="virtual-kbd-grid mt-4"></div>
+        </div>
+    </div>
+
+    <!-- ================= AUTHENTICATION MODAL ================= -->
+    <div id="authModal" class="ss-modal" style="display:none;">
+        <div class="ss-modal-content" style="max-width: 400px;">
+            <button class="ss-modal-close" id="closeAuthModal">&times;</button>
+            <div class="wizard-header">
+                <h2 id="authTitle">Login to Sarkari Simpler</h2>
+                <p id="authSubtitle">Save schemes and get personalized recommendations.</p>
+            </div>
+            <form id="authForm" class="wizard-form mt-4">
+                <div id="authNameField" style="display: none;">
+                    <label class="wizard-label">Full Name</label>
+                    <input type="text" id="authName" class="wizard-input mb-4" placeholder="Your Name">
+                </div>
+                <div>
+                    <label class="wizard-label">Email Address</label>
+                    <input type="email" id="authEmail" class="wizard-input mb-4" placeholder="you@example.com" required>
+                </div>
+                <div>
+                    <label class="wizard-label">Password</label>
+                    <input type="password" id="authPassword" class="wizard-input mb-4" placeholder="••••••••" required>
+                </div>
+                <button type="submit" id="authSubmitBtn" class="btn-primary w-full mt-2">Login</button>
+                <div class="mt-4" style="text-align: center; color: var(--text-muted); font-size: 0.875rem;">
+                    <span id="authToggleText">Don't have an account? </span>
+                    <a href="#" id="authToggleBtn" style="color: var(--accent-start); text-decoration: underline;">Register here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Error Toast -->
+    <div id="error"
+        style="display: none; position: fixed; top: 20px; right: 20px; background: #f43f5e; color: white; padding: 1rem; border-radius: 8px; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <span id="errorMessage"></span>
+    </div>
+
+    <!-- Google Translate Script -->
+    <div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- App Scripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>
