@@ -53,7 +53,7 @@ Open `.env` and add your keys. The app still works without them — it just uses
 node start.js
 ```
 
-Then open your browser at **http://localhost:8000** 🎉
+Then open your browser at **http://localhost:8000** 
 
 ---
 
@@ -103,7 +103,5 @@ Sarkari-Simpler/
 | Dark glassmorphism hero with Parliament background | AI-powered answers with scheme cards |
 
 ---
-
-## Made with ❤️ for every Indian citizen
 
 *"A Simpler India for a Brighter Tomorrow"*
