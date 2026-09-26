@@ -6,7 +6,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/AI-Gemini%20Powered-8B5CF6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AI-Powered-8B5CF6?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Languages-16%20Indian-FF9933?style=for-the-badge" />
 </p>
 
@@ -53,7 +53,7 @@ Open `.env` and add your keys. The app still works without them — it just uses
 node start.js
 ```
 
-Then open your browser at **http://localhost:8000** 
+Then open your browser at **http://localhost:8000** 🎉
 
 ---
 
@@ -63,7 +63,7 @@ Then open your browser at **http://localhost:8000**
 |------|-----------|
 | Frontend | HTML, CSS, Vanilla JavaScript |
 | Backend | Node.js (no external dependencies) |
-| AI | Google Gemini 1.5 Flash / OpenAI GPT-3.5 |
+| AI | AI-powered natural language assistant |
 | Database | JSON file (auto-generated from seed data) |
 | Languages | Google Translate (16 Indian languages) |
 
@@ -103,5 +103,7 @@ Sarkari-Simpler/
 | Dark glassmorphism hero with Parliament background | AI-powered answers with scheme cards |
 
 ---
+
+## Made with ❤️ for every Indian citizen
 
 *"A Simpler India for a Brighter Tomorrow"*
