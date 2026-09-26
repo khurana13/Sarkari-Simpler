@@ -1,30 +1,29 @@
-# Sarkari Simpler
+# Sarkari Simpler 🏛️✨
 
-> **"A Simpler India for a Brighter Tomorrow"**
+<p align="center">
+  <img src="frontend/assets/hero-gov-friendly.jpg" alt="Sarkari Simpler Banner" width="100%" style="border-radius: 12px;" />
+</p>
 
-An AI-powered Government Scheme Discovery & Eligibility Platform designed to bridge the gap between Indian citizens and government opportunities. Citizens can discover relevant schemes, check eligibility, and navigate to official portals safely — in their own language.
+<p align="center">
+  <strong>"A Simpler India for a Brighter Tomorrow"</strong><br>
+  <em>An AI-powered Government Scheme Discovery & Eligibility Platform bridging the gap between Indian citizens and government opportunities.</em>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/badge/Frontend-Vanilla_JS_%7C_CSS3-6366F1?style=for-the-badge" alt="Frontend" />
+  <img src="https://img.shields.io/badge/Backend-Node.js_(Zero_Deps)-8B5CF6?style=for-the-badge" alt="Backend" />
+  <img src="https://img.shields.io/badge/AI-Gemini_1.5_Flash-A855F7?style=for-the-badge" alt="AI" />
+  <img src="https://img.shields.io/badge/Languages-16_Indian_Languages-FF9933?style=for-the-badge" alt="Languages" />
+</p>
 
 ---
 
-## Table of Contents
+## 🌟 Overview
 
-- [Project Overview](#project-overview)
-- [Key Features](#key-features)
-- [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
-- [Installation & Setup](#installation--setup)
-- [How to Run](#how-to-run)
-- [API Reference](#api-reference)
-- [Current Limitations](#current-limitations)
-- [Future Improvements](#future-improvements)
+**Sarkari Simpler** is a modern, high-performance web application designed to help every Indian citizen easily discover, understand, and apply for government schemes in their preferred native language.
 
----
-
-## Project Overview
-
-Sarkari Simpler is a locally-runnable web application that aggregates Indian government schemes from official sources, provides deterministic eligibility checking, and uses AI (Gemini / OpenAI) to answer citizen questions in plain language.
-
-The project is intentionally built without heavy frontend frameworks to demonstrate raw DOM manipulation, progressive enhancement, and fundamental web development skills.
+Featuring a **futuristic dark glassmorphism interface**, **deterministic eligibility evaluator**, **multi-lingual voice search**, and **grounded AI assistance (Gemini / OpenAI)**, Sarkari Simpler simplifies complex government documentation into instant, actionable answers.
 
 ---
 
